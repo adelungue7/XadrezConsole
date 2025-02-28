@@ -13,7 +13,7 @@ internal class Program
 
             tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(1, 5));
             tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(5, 2));
-            tab.colocarPeca(new Rei(tab, Cor.Preta), new Posicao(3, 6));
+            tab.colocarPeca(new Rei(tab, Cor.Branca), new Posicao(3, 6));
 
             Tela.imprimirTabuleiro(tab);
         }
