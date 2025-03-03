@@ -31,17 +31,17 @@ namespace XadrezJogo
 
             for (int i = 0; i < tab.linhas; i++)
             {
-                if (posicoesPossiveis[i, j] == true)
-                {
-                    Console.BackgroundColor = fundoAlterado;
-                }
-                else
-                {
-                    Console.BackgroundColor = fundoOriginal;
-                }
                 Console.Write(8 - i + " ");
                 for (int j = 0; j < tab.colunas; j++)
                 {
+                    if (posicoesPossiveis[i, j] == true)
+                    {
+                        Console.BackgroundColor = fundoAlterado;
+                    }
+                    else
+                    {
+                        Console.BackgroundColor = fundoOriginal;
+                    }
                     imprimirPeca(tab.peca(i, j));
                     Console.BackgroundColor = fundoOriginal;
                 }
