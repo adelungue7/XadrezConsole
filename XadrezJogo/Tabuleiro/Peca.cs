@@ -39,10 +39,13 @@ namespace XadrezJogo.Tabuleiro
         {
             qteMovimentos++;
         }
+        public void decrementarQteMovimentos()
+        {
+            qteMovimentos--;
+        }
         public bool podeMoverPara(Posicao pos)
         {
             return movimentosPossiveis()[pos.linha, pos.coluna];
-
         }
         public abstract bool[,] movimentosPossiveis();
     }
