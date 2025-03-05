@@ -34,12 +34,15 @@ internal class Program
 
                     partida.realizaJogada(origem, destino);
                 }
+
                 catch (TabuleiroException e)
                 {
                     Console.WriteLine(e.Message);
                     Console.ReadLine();
                 }
             }
+            Console.Clear();
+            Tela.imprimirPartida(partida);
         }
         catch (TabuleiroException e)
         {
