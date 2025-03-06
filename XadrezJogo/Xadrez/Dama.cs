@@ -35,7 +35,7 @@ namespace XadrezJogo.Xadrez
                 {
                     break;
                 }
-                pos.linha = pos.linha - 1;
+                pos.definirValores(pos.linha -1, pos.coluna);
             }
             //abaixo
             pos.definirValores(posicao.linha + 1, posicao.coluna);
@@ -46,7 +46,7 @@ namespace XadrezJogo.Xadrez
                 {
                     break;
                 }
-                pos.linha = pos.linha + 1;
+                pos.definirValores(pos.linha + 1, pos.coluna);
             }
             //direita
             pos.definirValores(posicao.linha, posicao.coluna + 1);
@@ -57,7 +57,7 @@ namespace XadrezJogo.Xadrez
                 {
                     break;
                 }
-                pos.coluna = pos.coluna + 1;
+                pos.definirValores(pos.linha, pos.coluna +1);
             }
             //esquerda
             pos.definirValores(posicao.linha, posicao.coluna - 1);
@@ -68,7 +68,7 @@ namespace XadrezJogo.Xadrez
                 {
                     break;
                 }
-                pos.coluna = pos.coluna - 1;
+                pos.definirValores(pos.linha, pos.coluna -1);
             }
             //Noroeste
             pos.definirValores(posicao.linha - 1, posicao.coluna - 1);
@@ -79,7 +79,7 @@ namespace XadrezJogo.Xadrez
                 {
                     break;
                 }
-                pos.linha = pos.linha - 1;
+                pos.definirValores(pos.linha - 1, pos.coluna -1);
             }
             //Nordeste
             pos.definirValores(posicao.linha - 1, posicao.coluna + 1);
@@ -90,7 +90,7 @@ namespace XadrezJogo.Xadrez
                 {
                     break;
                 }
-                pos.linha = pos.linha + 1;
+                pos.definirValores(pos.linha - 1, pos.coluna +1);
             }
             //Sudeste
             pos.definirValores(posicao.linha + 1, posicao.coluna + 1);
@@ -101,7 +101,7 @@ namespace XadrezJogo.Xadrez
                 {
                     break;
                 }
-                pos.coluna = pos.coluna + 1;
+                pos.definirValores(pos.linha + 1, pos.coluna +1);
             }
             //Sudoeste
             pos.definirValores(posicao.linha + 1, posicao.coluna - 1);
@@ -112,7 +112,7 @@ namespace XadrezJogo.Xadrez
                 {
                     break;
                 }
-                pos.coluna = pos.coluna - 1;
+                pos.definirValores(pos.linha + 1, pos.coluna -1);
             }
             return mat;
         }
